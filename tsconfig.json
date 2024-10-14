@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["DOM", "es2019"],
+    "allowJs": true,
+    "jsx": "preserve",
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "typeRoots": ["@types"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "#*": ["./src/*"],
+      "#components/*": ["./src/components/*"],
+      "#routers/*": ["./src/components/routers/*"],
+      "#pages/*": ["./src/components/pages/*"]
+    }
+  },
+  "typeRoots": ["@types", "node_modules/@types"],
+  "exclude": [
+    "node_modules",
+    "metro.config.js",
+    "jest.config.js",
+    "webpack.config.js"
+  ],
+  "include": ["src"]
+}

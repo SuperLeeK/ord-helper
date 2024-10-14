@@ -4,12 +4,22 @@
   "private": true,
   "homepage": "https://superleek.github.io/ord-helper",
   "dependencies": {
+    "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.3",
+    "@mui/styled-engine-sc": "^6.1.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.27.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^6.1.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,7 +48,35 @@
       "last 1 safari version"
     ]
   },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "@babel/plugin-transform-export-namespace-from": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "babel-plugin-root-import": "^6.6.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "gh-pages": "^6.2.0",
+    "typescript": "^5.6.3"
+  },
+  "resolutions": {
+    "@types/react": "^18"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "jest": {
+    "preset": [
+      "react"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
